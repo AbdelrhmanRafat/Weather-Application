@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+}
+.list-item {
+    display: inline-block;
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+    padding-inline: 30px;
+    border-radius: 20px;
+    transition: border 200ms;
+    border: 2px solid transparent;
+}
+nav {
+    background-color: #1e202b;
+}
+
+a.active{
+    border-color: #009ad8;
+    color: #009ad8;
+}
+nav li:hover a{
+    border-color: #009ad8 !important;
+    border: 2px solid;
+    color: #009ad8 !important;
+}
+.weather-logo img {
+    width: 60px;
+    object-fit: contain;
+}
+.banner {
+    padding-top: 83px;
+}
+.banner img {
+    height: 350px;
+    object-fit: cover;
+    object-position: bottom;
+}
+main{
+    padding-top: 83px;
+    background-color: #1e202b;
+    min-height: 800px;
+}
+input {
+    background-color: #1e202b !important;
+    color: white !important;
+    padding: 20px !important;
+    border-radius: 30px !important;
+    border: none !important;
+}
+input::placeholder {
+    color: white !important;
+}
+button {
+    border-radius: 40px !important;  
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);  
+    padding-inline: 33px !important;
+}
+
+.first-day-card {
+    color: white;
+    background-color: #323544;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.first-day-card .header-card {
+    border-top-left-radius: 20px;
+}
+.third-day-card .header-card {
+    border-top-right-radius: 20px;
+}
+.second-day-card {
+    color: white;
+    background-color: #262936;
+}
+.third-day-card {
+    background-color: #323544;
+    color: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.header-card {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.header-card p {
+    padding-top: 5px;
+    padding-inline: 10px;
+}

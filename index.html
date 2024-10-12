@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="./CSS/all.min.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+</head>
+
+<body>
+    <nav class="py-4 text-white position-fixed fixed-top start-0 end-0">
+        <div class="container d-flex justify-content-between align-items-center">
+        <div class="weather-logo d-flex justify-content-start align-items-center gap-2">
+            <img src="./images/weather.png" alt="weather" />
+            <h1 class="h5 m-0"><a>Weather</a></h1>
+        </div>
+        <ul class="list-unstyled d-flex justify-content-between align-items-center gap-3 m-0">
+            <li><a class="active list-item">Home</a></li>
+            <li><a class="list-item">News</a></li>
+            <li><a class="list-item">Live cameras</a></li>
+            <li><a class="list-item">Photots</a></li>
+            <li><a class="list-item">Contact</a></li>
+        </ul>
+    </div>
+    </nav>
+        <main class="position-relative">
+            <div class="banner position-absolute top-0 z-0">
+                <img src="./images/banner.png"  class="w-100" />
+            </div>
+            <section>
+                <div class="container bg-black py-5">
+                 <div class="position-relative">
+                    <input type="input" class="form-control" placeholder="find your location"/>
+                    <button type="button" class="btn btn-primary position-absolute">find</button>
+                 </div>
+                </div>
+                <div class="container pt-5">
+                    <div class="row g-0 position-relative cards-container">
+                      <div class="col-4 first-day-card">
+                        <div class="header-card d-flex justify-content-between align-items-center">
+                            <p></p>
+                            <p></p>
+                        </div>
+                        <div class="first-day-weather-card py-5 px-3">
+                            <p class="city"></p>
+                            <h3 class="fw-bolder fs-1"></h3>
+                            <img width="90" src="" alt="" />
+                            <p class="weather-condition text-primary"></p>
+                            <div class="weather-details d-flex justify-content-start align-items-center gap-3">
+                                <div class="rain-percent">
+                                    <i class="fa-solid fa-umbrella"></i>  
+                                    <span></span>
+                                </div>
+                                <div class="wind-percent">
+                                    <i class="fa-solid fa-wind"></i>
+                                    <span></span>
+                                </div>
+                                <div class="wind-direction">
+                                    <i class="fa-regular fa-compass"></i>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-4 second-day-card">
+                        <div class="header-card d-flex justify-content-center align-items-center">
+                            <p class="text-center"></p>
+                        </div>
+                        <div class="second-day-weather-card py-5 d-flex flex-column justify-content-center align-items-center">
+                            <img width="60" />
+                            <h3 class="fw-bolder fs-3"></h3>
+                            <p class="fs-6"></p>
+                            <span class="text-primary"></span>
+                        </div>
+                    </div>
+                    <div class="col-4 third-day-card">
+                        <div class="header-card d-flex justify-content-center align-items-center">
+                        <p class="text-center"></p>
+                    </div>
+                        <div class="third-day-weather-card py-5 d-flex flex-column justify-content-center align-items-center">
+                            <img width="60" />
+                            <h3 class="fw-bolder fs-3"></h3>
+                            <p class="fs-6"></p>
+                            <span class="text-primary"></span>
+                        </div>
+                    </div>
+                      </div>
+            </section>
+      
+          </div>
+        </div>
+        </main>
+    </body>
+<script src="./js/index.js"></script>
+</html>
